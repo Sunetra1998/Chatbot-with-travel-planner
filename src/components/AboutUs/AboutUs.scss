@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Saira+Extra+Condensed:wght@400;500;700;900&display=swap');
+
+:root {
+    --primaryColor: hsl(14, 90%, 53%);
+    --primaryColorLight: hsl(14, 96%, 91%);
+    --bgColor: hsl(0, 0%, 100%);
+    --formColor: hsl(20, 42%, 87%);
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(0, 0%, 18%);
+    --greyColor: hsl(0, 0%, 51%);
+    --inputColor: hsl(330, 12%, 97%);
+    --cardColor: hsl(14, 25%, 90%);
+
+    --biggestFontSize: 2.5rem;
+    --h1FontSize: 2rem;
+    --h2FontSize: 1.25re;
+    --h3FontSize: 1rem;
+    --normalFontSize: 0.983rem;
+    --smallFontSize: 0.813rem;
+    --0smallestFontSize: 0.75rem;
+    --borderRadius: 3rem;
+
+}
+
+.AboutUs {
+    .secContainer {
+        padding-top: 1rem;
+
+        .redText {
+            color: var(--primaryColor);
+            font-size: var(--smallFontSize);
+            font-weight: 500;
+        }
+
+        h3 {
+            font-size: var(--h1FontSize);
+        }
+
+    }
+}
+
+@media screen and (min-width: 520px) {
+    .AboutUs {
+        .secContainer {
+            padding-top: 1rem;
+        }
+    }
+}
+
+@media screen and (min-width: 1014px) {
+    .AboutUs {
+        .secContainer {
+            padding-top: 2rem;
+
+            .secTitle {
+                .redText {
+                    font-size: var(--normalFontSize);
+                }
+
+                h3 {
+                    font-size: var(--h1FontSize);
+                }
+
+                p {
+                    font-size: var(--h3FontSize);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1148px) {
+    .AboutUs {
+        .secContainer {
+            padding-top: 2rem;
+
+            .secTitle {
+                h3 {
+                    font-size: var(--biggestFontSize);
+                }
+
+                p {
+                    font-size: var(--h2FontSize);
+                }
+            }
+
+        }
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .AboutUs {
+        .secContainer {
+            padding-top: 3rem;
+        }
+    }
+}

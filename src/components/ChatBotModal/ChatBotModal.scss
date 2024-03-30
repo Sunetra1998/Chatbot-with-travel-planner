@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Saira+Extra+Condensed:wght@400;500;700;900&display=swap');
+
+:root {
+  --primaryColor: hsl(14, 90%, 53%);
+  --primaryColorLight: hsl(14, 96%, 91%);
+  --bgColor: hsl(0, 0%, 100%);
+  --formColor: hsl(20, 42%, 87%);
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(0, 0%, 18%);
+  --greyColor: hsl(0, 0%, 51%);
+  --inputColor: hsl(330, 12%, 97%);
+  --cardColor: hsl(14, 25%, 90%);
+
+  --biggestFontSize: 2.5rem;
+  --h1FontSize: 2.2rem;
+  --h2FontSize: 1.25re;
+  --h3FontSize: 1rem;
+  --normalFontSize: 0.983rem;
+  --smallFontSize: 0.813rem;
+  --0smallestFontSize: 0.75rem;
+  --borderRadius: 3rem;
+}
+
+.ChatBotModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  height: 700px;
+  width: 800px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  max-width: 80%;
+  max-height: 80%;
+  overflow-y: auto;
+  position: relative;
+}
+
+.close-btn {
+  z-index: 100;
+  position: absolute;
+  top: -2px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 35px;
+  color: #555;
+}
+
+section[aria-label*="user"] {
+  margin-right: 0 !important;
+  width: 60% !important;
+}
+section[aria-label*="ChatBot"] {
+  width: 60% !important;
+  margin-left: 0 !important;
+  display: flex;
+  justify-content: flex-start;
+}
+section[aria-label*="ChatBot"] .cs-message__content{
+  background: #c6e3fa !important;
+}
